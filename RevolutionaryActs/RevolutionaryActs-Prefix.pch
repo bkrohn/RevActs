@@ -1,0 +1,40 @@
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+
+/*
+ #ifndef _DEBUG
+ #define NSLog(format, ...)
+ #endif
+*/
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import <Parse/Parse.h>
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <Parse/PFUser.h>
+#import <Parse/PFQuery.h>
+
+
+
+#import "Reachability.h"
+#import "Appirater.h"
+#import "Header.h"
+#import "DTShareService.h"
+#import "UIViewController+RevolutionaryViewControllers.h"
+#import "ALToastView.h"
+#import "Loading.h"
+
+
+#import "InternalBrowserController.h"
+#import "RevolutionaryActsViewController.h"
+#import "PopUpViewController.h"
+#import "LoginVC.h"
+#import "SplashscreenViewController.h"
+#endif

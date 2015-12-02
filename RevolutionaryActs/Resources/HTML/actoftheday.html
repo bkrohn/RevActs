@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="actoftheday.css"> 
+    <script src="jquery.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript"> 
+      function setDay(dayNumber) {  
+        $("#dayImage").attr("src", dayNumber+"_iphone@2x.png");
+        $("#arrows").attr("src", "arrows_big.png");
+        $("a").attr("href", "revact://"+dayNumber);
+      }
+    </script>  
+    
+  </head>
+  <body onload="window.location='domloaded://loaded'">
+    <div class="gradientbox">
+      <div class="actheadline">Revolutionary Act of the Day</div>
+      <div class="act">	
+        <a id="dayLink"><img id="dayImage" src="" height="150" /><img id="arrows" src="" height="130" /></a>
+      </div>
+    </div>
+  </body>    
+</html>
+
